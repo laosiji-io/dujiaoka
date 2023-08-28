@@ -29,6 +29,10 @@ return [
         'is_open_anti_red' => '是否開啟Wechat/QQ防紅',
         'is_open_img_code' => '是否開啟圖形驗證碼',
         'is_open_search_pwd' => '是否開啟查詢密碼',
+
+        'is_cn_challenge' => '大陆访问開啟圖形驗證',
+        'is_cn_allow' => '是否開啟访问',
+
         'is_open_server_jiang' => '是否開啟server醬',
         'server_jiang_token' => 'server醬通訊token',
         'is_open_telegram_push' => '是否開啟Telegram推送',
