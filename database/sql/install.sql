@@ -506,7 +506,7 @@ INSERT INTO `pays` VALUES (null, '支付宝 PC', 'aliweb', 0, 1, 1, '商户号',
 INSERT INTO `pays` VALUES (null, '支付宝 WAP', 'aliwap', 0, 1, 2, '商户号', '', '密钥', '/pay/alipay', 1, now(), now(), NULL);
 INSERT INTO `pays` VALUES (null, '微信扫码', 'wescan', 0, 2, 1, '商户号', '', 'V2密钥', '/pay/wepay', 1, now(), now(), NULL);
 INSERT INTO `pays` VALUES (null, '微信小程序', 'miniapp', 0, 1, 2, '商户号', '', 'V2密钥', '/pay/wepay', 1, now(), now(), NULL);
-INSERT INTO `pays` VALUES (null, '码支付 QQ', 'mqq', 0, 0, 1, 1, '商户号', '', '密钥', '/pay/mapay', 1, now(), now(), NULL);
+INSERT INTO `pays` VALUES (null, '码支付 QQ', 'mqq', 0, 1, 1, '商户号', '', '密钥', '/pay/mapay', 1, now(), now(), NULL);
 INSERT INTO `pays` VALUES (null, '码支付支付宝', 'mzfb', 0, 1, 1, '商户号', '', '密钥', '/pay/mapay', 1, now(), now(), NULL);
 INSERT INTO `pays` VALUES (null, '码支付微信', 'mwx', 0, 1, 1, '商户号', '', '密钥', '/pay/mapay', 1, now(), now(), NULL);
 INSERT INTO `pays` VALUES (null, 'Paysapi 支付宝', 'pszfb', 0, 1, 1, '商户号', '', '密钥', '/pay/paysapi', 1,now(), now(), NULL);
