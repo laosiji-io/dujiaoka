@@ -112,7 +112,7 @@
                                 @endif
                             </td>
                             {{-- 价格 --}}
-                            <td>￥<b>{{ $goods['actual_price'] }}</b></td>
+                            <td>￥<b>{{ $goods['sell_price'] }}</b></td>
                             <td class="text-center">
                                 @if($goods['in_stock'] > 0)
                                     {{-- 购买 --}}
