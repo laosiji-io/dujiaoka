@@ -23,30 +23,29 @@ CREATE TABLE `admin_menu` (
 -- Records of admin_menu
 -- ----------------------------
 BEGIN;
-INSERT INTO `admin_menu` VALUES (null, 0, 1, 'Index', 'feather icon-bar-chart-2', '/', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 2, 'Admin', 'feather icon-settings', '', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 2, 3, 'Users', '', 'auth/users', '', 1, now(), NULL);
-INSERT INTO `admin_menu` VALUES (null, 2, 4, 'Roles', '', 'auth/roles', '', 1, now(), NULL);
-INSERT INTO `admin_menu` VALUES (null, 2, 5, 'Permission', '', 'auth/permissions', '', 1, now(), NULL);
-INSERT INTO `admin_menu` VALUES (null, 2, 6, 'Menu', '', 'auth/menu', '', 1, now(), NULL);
-INSERT INTO `admin_menu` VALUES (null, 2, 7, 'Extensions', '', 'auth/extensions', '', 1, now(), NULL);
-INSERT INTO `admin_menu` VALUES (null, 0, 9, 'Goods_Manage', 'fa-shopping-bag', NULL, '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 11, 11, 'Goods', 'fa-shopping-bag', '/goods', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 11, 10, 'Goods_Group', 'fa-star-half-o', '/goods-group', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 12, 'Carmis_Manage', 'fa-credit-card-alt', NULL, '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 14, 13, 'Carmis', 'fa-credit-card', '/carmis', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 14, 14, 'Import_Carmis', 'fa-plus-circle', '/import-carmis', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 18, 16, 'Coupon', 'fa-dollar', '/coupon', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 15, 'Coupon_Manage', 'fa-diamond', NULL, '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 17, 'Configuration', 'fa-wrench', NULL, '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 19, 18, 'Email_Template_Configuration', 'fa-envelope', '/emailtpl', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 19, 19, 'Pay_Configuration', 'fa-cc-visa', '/pay', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 8, 'Order_Manage', 'fa-table', NULL, '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 22, 20, 'Order', 'fa-heart', '/order', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 19, 21, 'System_Setting', 'fa-cogs', '/system-setting', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 19, 22, 'Email_Test', 'fa-envelope', '/email-test', '', 1, now(), now());
-INSERT INTO `admin_menu` VALUES (null, 0, 23, 'Article_Manage', 'fa-newspaper-o', '/article', '', 1, now(), now());
-
+INSERT INTO `admin_menu` VALUES (10,  0, 10, 'Index', 'feather icon-bar-chart-2', '/', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (20,  0, 20, 'Admin', 'feather icon-settings', '', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (21, 20, 21, 'Users', '', 'auth/users', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (22, 20, 22, 'Roles', '', 'auth/roles', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (23, 20, 23, 'Permission', '', 'auth/permissions', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (24, 20, 24, 'Menu', '', 'auth/menu', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (25, 20, 25, 'Extensions', '', 'auth/extensions', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (30,  0, 30, 'Order_Manage', 'fa-table', NULL, '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (31, 30, 31, 'Order', 'fa-heart', '/order', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (40,  0, 40, 'Goods_Manage', 'fa-shopping-bag', NULL, '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (41, 40, 41, 'Goods_Group', 'fa-star-half-o', '/goods-group', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (42, 40, 42, 'Goods', 'fa-shopping-bag', '/goods', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (50,  0, 50, 'Carmis_Manage', 'fa-credit-card-alt', NULL, '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (51, 50, 51, 'Carmis', 'fa-credit-card', '/carmis', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (52, 50, 52, 'Import_Carmis', 'fa-plus-circle', '/import-carmis', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (60,  0, 60, 'Coupon_Manage', 'fa-diamond', NULL, '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (61, 60, 60, 'Coupon', 'fa-dollar', '/coupon', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (70,  0, 70, 'Configuration', 'fa-wrench', NULL, '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (71, 70, 71, 'System_Setting', 'fa-cogs', '/system-setting', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (72, 70, 72, 'Pay_Configuration', 'fa-cc-visa', '/pay', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (73, 70, 73, 'Email_Template_Configuration', 'fa-envelope', '/emailtpl', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (74, 70, 74, 'Email_Test', 'fa-envelope', '/email-test', '', 1, now(), now());
+INSERT INTO `admin_menu` VALUES (80,  0, 80, 'Article_Manage', 'fa-newspaper-o', '/article', '', 1, now(), now());
 COMMIT;
 
 -- ----------------------------
