@@ -92,8 +92,11 @@ body {
 	font-size: 14px;
 }
 
+/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter-function/brightness  */
+/*  全黑 brightness(0)  */
+/*  改回 brightness(1)  */
 .logo {
-	filter: brightness(0);
+	filter: brightness(1);
 }
 
 .header-top-right-btns {
