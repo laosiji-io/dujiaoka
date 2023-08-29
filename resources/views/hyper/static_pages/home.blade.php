@@ -105,10 +105,14 @@
                             </td>
                             {{-- 库存 --}}
                             <td class="phone">
-                                @if($goods['in_stock'] > 0)
-                                    库存充足
-                                @else
+                                @if($goods['in_stock'] < 1)
                                     库存不足
+                                @elseif($goods['in_stock'] < 3)
+                                    库存紧张
+                                @elseif($goods['in_stock'] < 10)
+                                    {{ $goods['in_stock'] }}
+                                @else
+                                    库存充足
                                 @endif
                             </td>
                             {{-- 价格 --}}
