@@ -5,6 +5,7 @@ namespace App\Admin\Forms;
 use App\Models\BaseModel;
 use Dcat\Admin\Widgets\Form;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class SystemSetting extends Form
 {
@@ -18,6 +19,11 @@ class SystemSetting extends Form
     public function handle(array $input)
     {
         Cache::put('system-setting', $input);
+
+        // 同时写入数据库
+        DB::table('admin_settings')
+          ->updateOrInsert(['slug' => 'system-setting'], ['value' => json_encode($input), 'updated_at' => date('Y-m-d H:i:s')]);
+
         return $this
 				->response()
 				->success(admin_trans('system-setting.rule_messages.save_system_setting_success'));
@@ -105,7 +111,13 @@ class SystemSetting extends Form
 
     public function default()
     {
-        return Cache::get('system-setting');
+        return Cache::get('system-setting', function () {
+            // 如果缓存没有则从数据库中读取
+            $setting = DB::table('admin_settings')->where('slug', 'system-setting')->first();
+            if ($setting && property_exists($setting, 'value')) {
+                return json_decode($setting->value, true);
+            }
+        });
     }
 
 }
