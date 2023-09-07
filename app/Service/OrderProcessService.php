@@ -405,6 +405,18 @@ class OrderProcessService
                 $this->calculateTheCouponPrice(),
                 $this->calculateTheWholesalePrice()
             );
+
+            // 订单价格区分 临时解决
+            $samePriceOrder = DB::table('orders')->where([
+                ['actual_price', '=', $order->actual_price],
+                ['status', '>=', 1],
+                ['status', '<=', 3],
+            ])->first();
+
+            if (NULL != $samePriceOrder) {
+                $order->actual_price = $samePriceOrder->actual_price + 0.03;
+            }
+
             // 保存订单
             $order->save();
             // 如果有用到优惠券
