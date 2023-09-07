@@ -414,7 +414,7 @@ class OrderProcessService
             ])->first();
 
             if (NULL != $samePriceOrder) {
-                $order->actual_price = $samePriceOrder->actual_price + 0.03;
+                $order->actual_price = $samePriceOrder->actual_price + 0.1;
             }
 
             // 保存订单
